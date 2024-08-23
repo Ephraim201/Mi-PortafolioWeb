@@ -1,0 +1,651 @@
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('fonts/Monocraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Monocraft', monospace;
+    display: flex;
+    background-color: #EB9664;
+    transition: background-color 0.5s, color 0.5s;
+    
+}
+
+
+h2 {
+    color: #7DEBCA;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+a:hover
+{
+    color: #000000;
+}
+
+.profile {
+    font-family: 'Monocraft', monospace;
+}
+
+.profile a {
+    font-family: 'Monocraft', monospace;
+}
+
+.profile span {
+    font-family: 'Monocraft', monospace;
+}
+
+.btn-primary {
+    color: #ffffff; 
+    background-color: #EA564C;
+    border-color: #EA564C; 
+}
+
+.btn-primary:hover {
+    color: #000000; 
+    background-color: #EBE878; 
+    border-color: #EBE878; 
+}
+
+
+/* -------------------------------------*/
+
+.content h2 {
+    font-size: 50px;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #EBE878;
+    color: white;
+    position: fixed;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar .profile-pic {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 40px 0;
+    text-decoration: none;
+}
+
+.sidebar nav ul li a {
+    color: #EB9664;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: none;
+    color:#000
+}
+
+/* Contenido principal */
+.content {
+    margin-left: 350px; 
+    padding: 20px;
+}
+
+section {
+    
+    margin-top: 260px;
+    margin-bottom: 400px;
+}
+
+/* -------------------------------------*/
+
+
+
+.button-container {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.circle-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #EA564C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    overflow: hidden; /* Asegura que la imagen no se salga del botón */
+}
+
+.circle-button img {
+    width: 70%; 
+    height: 70%;
+    object-fit: cover;
+}
+
+.circle-button:hover {
+    background-color: #EBE878;
+    color: #000000;
+}
+
+/* -------------------------------------*/
+
+.square-container {
+    display: flex;
+    justify-content: left;
+    gap: 20px; 
+    margin-top: 50px; 
+}
+
+.square {
+    width: 120px;
+    height: 130px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px; 
+}
+
+.square img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+.square-item
+{
+    text-align: center;
+}
+
+/* -------------------------------------*/
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.profile-pic {
+    border: 5px solid #EA564C; 
+    border-radius: 50%; 
+}
+
+
+.profile img {
+    width: 25px; 
+    height: 25px;
+    border-radius: 70%; 
+    object-fit: cover;
+}
+
+.profile a {
+    text-decoration: none;
+    color: #EBE878; 
+}
+
+.profile a:hover {
+    color: black; 
+}
+
+p a {
+    color: #EBE878;
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+/* -------------------------------------*/
+
+
+
+.custom-button img {
+    width: 50px; 
+    height: 50px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.custom-button span {
+    margin-top: 10px;
+    font-size: 10px; 
+    color: #000000;
+    text-align: center;
+}
+
+.custom-button:hover {
+    background-color: #EA564C;
+    color: #f7f7f7 !important; 
+    transform: scale(1.05);
+    
+}
+
+.custom-button {
+    padding: 10px;
+    background-color: #EBE878;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80px; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode .custom-button:hover {
+    background-color: #EBE878;
+    color: #000000 !important; 
+    transform: scale(1.05);
+    
+}
+
+.dark-mode .custom-button {
+    padding: 10px;
+    background-color: #EA564C;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80px; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-button:hover span {
+    color: #ffffff;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 110%; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+.custom-button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* -------------------------------------*/
+
+.gif-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.walking-gif {
+    width: 50px; 
+    height: auto;
+    position: relative;
+    animation: slideRight 10s linear infinite;
+}
+
+/* Animación para deslizar el GIF de izquierda a derecha */
+@keyframes slideRight {
+    0% {
+        left: -150px;
+    }
+    100% {
+        left: 112vw; 
+        transform: translateX(-100%); 
+    }
+}
+
+/* -------------------------------------*/
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* -------------------------------------*/
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bullet-points {
+    margin-left: 20px;
+}
+
+.bullet-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #000; 
+    border-radius: 50%;
+    margin-right: 10px; 
+    margin-top: 5px;
+}
+
+
+/* -------------------------------------*/
+
+#education {
+    font-size: 10px; 
+}
+
+#education h2 {
+    font-size: 23px;
+}
+
+#education h4 {
+    font-size: 10px;
+}
+
+#education p, 
+#education .bullet-item p {
+    font-size: 10px; 
+}
+
+#education strong {
+    font-size: 10px;
+}
+
+/* -------------------------------------*/
+
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo para el tema oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode .sidebar {
+    background-color: #1e1e1e; 
+    color: #e0e0e0; 
+}
+
+
+.dark-mode .custom-button:hover {
+    background-color: rgb(21, 179, 223); 
+    color: #000000 !important;
+    transform: scale(1.05);
+    
+}
+
+.dark-mode  a:hover
+{
+    color: rgb(21, 179, 223);
+}
+
+.dark-mode .profile a:hover {
+    color: rgb(21, 179, 223);
+}
+
+.dark-mode .sidebar nav ul li a:hover {
+    text-decoration: none;
+    color:#7DEBCA;
+}
+
+.dark-mode .profile img {
+    transition: opacity 0.5s ease; 
+}
+
+.dark-mode-toggle:hover{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .dark-mode-toggle{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #272727;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.dark-mode .dark-mode-toggle:hover{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .portfolio-item {
+    background-color:  #EA564C;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px; /* Ancho fijo para cada recuadro */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode .portfolio-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #000000;
+    background-color: #EBE878;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .portfolio-item h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.dark-mode .portfolio-item a:hover {
+    background-color: #c4c163; 
+}
+
+#portafolio strong {
+    color: #ffdb3a; /* Cambia este color por el que prefieras */
+}
+
+#about strong {
+    color: #ffdb3a; /* Cambia este color por el que prefieras */
+}
+
+
+
+/* -------------------------------------*/
+
+#portfolio {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los recuadros */
+    transform: translateX(-10px);
+}
+
+.portfolio-item {
+    background-color:  #EBE878;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px; /* Ancho fijo para cada recuadro */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #EA564C; 
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-item a:hover {
+    background-color: #952f27; 
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+
+/* -------------------------------------*/
+
+.two-columns {
+    display: flex;
+    justify-content: space-between; /* Espacio entre columnas */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.two-columns .column {
+    flex: 1; /* Ambas columnas ocupan el mismo ancho */
+    background-color: #EBE878; /* Color de fondo opcional */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.dark-mode .two-columns .column {
+    flex: 1; /* Ambas columnas ocupan el mismo ancho */
+    background-color: #EA564C;  /* Color de fondo opcional */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Opcional: Ajustar el estilo de los títulos y textos dentro de las columnas */
+.two-columns h2, .two-columns h4 {
+    color:  rgb(234, 35, 35); 
+}
+
+.two-columns p, .two-columns strong {
+    color: #000000;
+}
+
+.dark-mode .two-columns h2, .dark-mode .two-columns h4 {
+    color: #ffffff; /* Color blanco para los títulos en modo oscuro */
+}
+
+.dark-mode .two-columns p, .dark-mode .two-columns strong {
+    color: #000000; /* Color blanco para los párrafos y texto en negrita en modo oscuro */
+}
+
+/* -------------------------------------*/
+
+audio {
+    display: none;
+}
